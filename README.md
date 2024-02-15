@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import unaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-unary-factory@esm/index.mjs';
+import unaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-unary-factory@v0.2.0-esm/index.mjs';
 ```
 
 #### unaryFactory( prng, dtypes, dtype )
@@ -503,7 +503,7 @@ var sz = random.byteLength;
 
 import exponential from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-exponential@esm/index.mjs';
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@esm/index.mjs';
-import unaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-unary-factory@esm/index.mjs';
+import unaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-unary-factory@v0.2.0-esm/index.mjs';
 
 var dt = dtypes( 'real_floating_point_and_generic' );
 
