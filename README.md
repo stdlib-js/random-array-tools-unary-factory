@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import unaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-unary-factory@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/random-array-tools-unary-factory/tags). For example,
+
+```javascript
 import unaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-unary-factory@v0.2.1-esm/index.mjs';
 ```
 
@@ -503,7 +508,7 @@ var sz = random.byteLength;
 
 import exponential from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-exponential@esm/index.mjs';
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@esm/index.mjs';
-import unaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-unary-factory@v0.2.1-esm/index.mjs';
+import unaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-unary-factory@esm/index.mjs';
 
 var dt = dtypes( 'real_floating_point_and_generic' );
 
