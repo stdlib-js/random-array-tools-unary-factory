@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import unaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-unary-factory@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/random-array-tools-unary-factory/tags). For example,
+
+```javascript
 import unaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-unary-factory@v0.2.3-deno/mod.js';
 ```
 
@@ -498,7 +503,7 @@ var sz = random.byteLength;
 ```javascript
 import exponential from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-exponential@deno/mod.js';
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@deno/mod.js';
-import unaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-unary-factory@v0.2.3-deno/mod.js';
+import unaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-unary-factory@deno/mod.js';
 
 var dt = dtypes( 'real_floating_point_and_generic' );
 
