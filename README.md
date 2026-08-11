@@ -35,32 +35,14 @@ limitations under the License.
 
 > Create a factory function for generating pseudorandom values drawn from a unary PRNG.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/random-array-tools-unary-factory
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var unaryFactory = require( '@stdlib/random-array-tools-unary-factory' );
+import unaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-unary-factory@esm/index.mjs';
 ```
 
 #### unaryFactory( prng, dtypes, dtype )
@@ -68,7 +50,7 @@ var unaryFactory = require( '@stdlib/random-array-tools-unary-factory' );
 Returns a factory function for generating pseudorandom values drawn from a unary PRNG.
 
 ```javascript
-var exponential = require( '@stdlib/random-base-exponential' );
+import exponential from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-exponential@esm/index.mjs';
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -89,7 +71,7 @@ The function has the following parameters:
 Returns a function for generating pseudorandom values drawn from a unary PRNG.
 
 ```javascript
-var exponential = require( '@stdlib/random-base-exponential' );
+import exponential from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-exponential@esm/index.mjs';
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -122,7 +104,7 @@ The function supports the following options:
 Returns an array of pseudorandom values drawn from a unary PRNG.
 
 ```javascript
-var exponential = require( '@stdlib/random-base-exponential' );
+import exponential from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-exponential@esm/index.mjs';
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -147,7 +129,7 @@ The function accepts the following options:
 -   **dtype**: output array data type. Setting this option overrides the default output array data type.
 
 ```javascript
-var exponential = require( '@stdlib/random-base-exponential' );
+import exponential from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-exponential@esm/index.mjs';
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -168,8 +150,8 @@ var v = random( 10, 2.0, {
 Fills an array with pseudorandom values drawn from a unary PRNG.
 
 ```javascript
-var exponential = require( '@stdlib/random-base-exponential' );
-var zeros = require( '@stdlib/array-zeros' );
+import exponential from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-exponential@esm/index.mjs';
+import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@esm/index.mjs';
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -201,7 +183,7 @@ The method has the following parameters:
 Returns an array of pseudorandom values drawn from a unary PRNG.
 
 ```javascript
-var exponential = require( '@stdlib/random-base-exponential' );
+import exponential from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-exponential@esm/index.mjs';
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -228,7 +210,7 @@ The function accepts the following options:
 -   **dtype**: output array data type. Setting this option overrides the default output array data type.
 
 ```javascript
-var exponential = require( '@stdlib/random-base-exponential' );
+import exponential from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-exponential@esm/index.mjs';
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -254,8 +236,8 @@ v = random( 10, {
 Fills an array with pseudorandom values drawn from a unary PRNG.
 
 ```javascript
-var exponential = require( '@stdlib/random-base-exponential' );
-var zeros = require( '@stdlib/array-zeros' );
+import exponential from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-exponential@esm/index.mjs';
+import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@esm/index.mjs';
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -286,7 +268,7 @@ The method has the following parameters:
 The underlying pseudorandom number generator.
 
 ```javascript
-var exponential = require( '@stdlib/random-base-exponential' );
+import exponential from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-exponential@esm/index.mjs';
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -305,7 +287,7 @@ var prng = random.PRNG;
 The value used to seed the underlying pseudorandom number generator.
 
 ```javascript
-var exponential = require( '@stdlib/random-base-exponential' );
+import exponential from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-exponential@esm/index.mjs';
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -322,8 +304,8 @@ var seed = random.seed;
 If the `factory` function is provided a PRNG for uniformly distributed numbers, the associated property value on the returned function is `null`.
 
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
-var exponential = require( '@stdlib/random-base-exponential' );
+var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
+import exponential from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-exponential@esm/index.mjs';
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -344,7 +326,7 @@ var seed = random.seed;
 Length of underlying pseudorandom number generator seed.
 
 ```javascript
-var exponential = require( '@stdlib/random-base-exponential' );
+import exponential from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-exponential@esm/index.mjs';
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -361,8 +343,8 @@ var len = random.seedLength;
 If the `factory` function is provided a PRNG for uniformly distributed numbers, the associated property value on the returned function is `null`.
 
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
-var exponential = require( '@stdlib/random-base-exponential' );
+var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
+import exponential from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-exponential@esm/index.mjs';
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -383,7 +365,7 @@ var len = random.seedLength;
 Writable property for getting and setting the underlying pseudorandom number generator state.
 
 ```javascript
-var exponential = require( '@stdlib/random-base-exponential' );
+import exponential from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-exponential@esm/index.mjs';
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -400,8 +382,8 @@ var state = random.state;
 If the `factory` function is provided a PRNG for uniformly distributed numbers, the associated property value on the returned function is `null`.
 
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
-var exponential = require( '@stdlib/random-base-exponential' );
+var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
+import exponential from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-exponential@esm/index.mjs';
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -422,7 +404,7 @@ var state = random.state;
 Length of underlying pseudorandom number generator state.
 
 ```javascript
-var exponential = require( '@stdlib/random-base-exponential' );
+import exponential from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-exponential@esm/index.mjs';
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -439,8 +421,8 @@ var len = random.stateLength;
 If the `factory` function is provided a PRNG for uniformly distributed numbers, the associated property value on the returned function is `null`.
 
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
-var exponential = require( '@stdlib/random-base-exponential' );
+var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
+import exponential from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-exponential@esm/index.mjs';
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -461,7 +443,7 @@ var len = random.stateLength;
 Size (in bytes) of underlying pseudorandom number generator state.
 
 ```javascript
-var exponential = require( '@stdlib/random-base-exponential' );
+import exponential from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-exponential@esm/index.mjs';
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -478,8 +460,8 @@ var sz = random.byteLength;
 If the `factory` function is provided a PRNG for uniformly distributed numbers, the associated property value on the returned function is `null`.
 
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
-var exponential = require( '@stdlib/random-base-exponential' );
+var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
+import exponential from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-exponential@esm/index.mjs';
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -513,10 +495,15 @@ var sz = random.byteLength;
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var exponential = require( '@stdlib/random-base-exponential' );
-var dtypes = require( '@stdlib/array-dtypes' );
-var unaryFactory = require( '@stdlib/random-array-tools-unary-factory' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import exponential from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-exponential@esm/index.mjs';
+import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@esm/index.mjs';
+import unaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-unary-factory@esm/index.mjs';
 
 var dt = dtypes( 'real_floating_point_and_generic' );
 
@@ -538,6 +525,10 @@ x = random( 10, 2.0, {
     'dtype': 'generic'
 });
 // returns [...]
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -561,7 +552,7 @@ x = random( 10, 2.0, {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
